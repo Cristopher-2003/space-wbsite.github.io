@@ -11,7 +11,7 @@ body{
 .inicio-space{
     width: 100%;
     overflow: hidden;
-    background-image: url(../starter-code/assets/home/background-home-mobile.jpg);
+    background-image: url(./starter-code/assets/home/background-home-mobile.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -174,7 +174,7 @@ body{
     .inicio-space{
         width: 100%;
         overflow: hidden;
-        background-image: url(../starter-code/assets/home/background-home-desktop.jpg);
+        background-image: url(./starter-code/assets/home/background-home-desktop.jpg);
         background-size: cover;
         background-position: center;
     }
