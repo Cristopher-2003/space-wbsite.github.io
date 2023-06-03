@@ -71,6 +71,8 @@ body{
 }
 .mars_image{
     width: 100%;
+    animation: rotacion 64s linear infinite;
+  
 }
 .contenido_section_info{
     margin: 0 auto;
@@ -128,7 +130,14 @@ body{
     text-transform: uppercase;
     font-size: 23px;
 }
-
+@keyframes rotacion {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 /*diseño de tableta*/
 @media(min-width:600px){
     .inicio-space{
@@ -194,6 +203,10 @@ body{
     .contenedor_img_textos_page{
         width: 95%;
     }
+    .img_mars_pt{
+        margin: 55px 0;
+        width: 75%;
+    }
 }
 
 @media (min-width:800px) {
@@ -254,7 +267,7 @@ body{
     }
     .img_mars_pt{
         margin: 50px 0;
-        width: 100%;
+        width: 85%;
     }
     .mars_link{
         font-size: 16px;

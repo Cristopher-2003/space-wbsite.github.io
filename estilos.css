@@ -45,7 +45,7 @@ body{
 .description-space{
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 5px;
     margin-top: 40px;
     text-align: center;
     color: rgb(208, 229, 255);
@@ -70,8 +70,8 @@ body{
 }
 
 .circle_explore{
-    margin: 60px auto 30px;
-   
+    margin: 65px auto ;
+   margin-bottom: 170px;
     display: flex;
   justify-content: center;
   align-items: center;
@@ -85,7 +85,7 @@ body{
 .explore{
     font-size: 27px;
     letter-spacing: 1px;
-    font-weight: 200;
+    font-weight: 300;
     text-transform: uppercase;
     text-align: center;
   position: absolute;
