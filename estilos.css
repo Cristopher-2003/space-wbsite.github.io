@@ -123,9 +123,9 @@ body{
         padding-bottom: 30px;
     }
     .links:hover{
-        border-bottom: 2px solid #fff;
+        color: #d3d3d3;
     }
-    .links:focus{
+    .links:active , .links:focus{
         border-bottom: 3px solid #fff;
     }
     .menu-links-space span{
@@ -239,6 +239,7 @@ body{
         display: flex;
         width: 85%;
         margin: 70px auto;
+        padding-bottom: 9px;
         justify-content: space-between;
         align-items: center;
     }
