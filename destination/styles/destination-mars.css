@@ -50,8 +50,9 @@ body{
     display: flex;
     gap: 10px;
     color: #dfdfdf;
+    justify-content: center;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 1px;
     font-size: 19px;
 }
@@ -66,8 +67,8 @@ body{
     flex-direction: column;
 }
 .img_mars_pt{
-    margin: 55px 0;
-    width: 100%;
+    margin: 25px 0 20px;
+    width: 90%;
 }
 .mars_image{
     width: 100%;
@@ -81,6 +82,7 @@ body{
 .nav_menu_mars{
     display: flex;
     gap: 20px;
+    justify-content: center;
 }
 .mars_link{
     font-size: 13px;
@@ -100,26 +102,28 @@ body{
 .title_menu_mars{
     text-transform: uppercase;
     letter-spacing: 6px;
-    font-weight: 350;
-    margin-top: 5px;
+    text-align: center;
+    font-weight: 400;
     font-size: 90px;
     color: #fff;
 }
 .paragraph_mars{
     font-weight: lighter;
     font-size: 16px;
-    margin-top: 5px;
+    text-align: center;
     color: #9fa7ba;
     padding-bottom: 30px;
     border-bottom: 2px solid rgb(66, 77, 91);
 }
 .meses_millas_mars{
     display: flex;
+    flex-direction: column;
+    text-align: center;
     margin: 20px 0;
-    gap: 30px;
+    gap: 15px;
 }
 .title_distance{
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 100;
     color: #8e8e8e;
 }
@@ -128,8 +132,9 @@ body{
     letter-spacing: 1px;
     font-weight: 300;
     text-transform: uppercase;
-    font-size: 23px;
+    font-size: 27px;
 }
+/*animacion*/
 @keyframes rotacion {
     0% {
       transform: rotate(0deg);
@@ -138,6 +143,14 @@ body{
       transform: rotate(360deg);
     }
   }
+
+
+
+
+
+
+
+
 /*diseño de tableta*/
 @media(min-width:600px){
     .inicio-space{
@@ -179,17 +192,19 @@ body{
     .title_mars{
         font-size: 23px;
         font-weight: 400;
-        margin-top: 70px;
+        margin-top: 1px;
+        justify-content: flex-start;
     }
     .mars_link{
         font-size: 14px;
     }
     .title_menu_mars{
-        font-size: 100px;
+        font-size: 90px;
         font-weight: 400;
+        letter-spacing:2px;
     }
     .meses_millas_mars{
-        gap: 60px;
+        gap: 15px;
     }
     .paragraph_mars{
     font-size: 17px;
@@ -198,14 +213,14 @@ body{
         font-size: 17px;
     }
     .kilometers_distance{
-        font-size: 25px;
+        font-size: 27px;
     }
     .contenedor_img_textos_page{
         width: 95%;
     }
     .img_mars_pt{
-        margin: 55px 0;
-        width: 75%;
+        margin: 30px auto;
+        width: 70%;
     }
 }
 
@@ -259,38 +274,52 @@ body{
         font-weight: bold;
     }
     .contenedor_img_textos_page{
-        width: 100%;
         flex-direction: row;
-        padding-bottom: 86px;
-        gap: 90px;
+        padding-bottom: 60px;
+        gap: 80px;
         align-items: center;
         justify-content: space-between;
     }
+    .contenido_section_info{
+        width: 85%;
+    }
+    .nav_menu_mars{
+        justify-content: flex-start;
+    }
     .img_mars_pt{
-        margin: 50px 0;
+        margin: 30px 0;
         width: 85%;
     }
     .mars_link{
-        font-size: 16px;
-        color: #6d7a8e;
+        font-size: 17px;
+        color: #7485a0;
     }
     .title_menu_mars{
+        text-align: start;
         font-weight: 300;
         font-size: 100px;
     }
     .paragraph_mars{
+        text-align: start;
         font-size: 19px;
     }
     .title_mars{
         margin-top: 50px;
     }
     .paragraph_mars{
-        padding-bottom: 50px;
-    }
-    .kilometers_distance{
-        margin-top: 5px;
+        padding-bottom: 40px;
     }
     .meses_millas_mars{
-        margin-bottom: 80px;
+        flex-direction: row;
+        gap: 50px;
     }
+    .title_distance{
+        text-align: start;
+    }
+  
+    .kilometers_distance{
+        margin-top: 5px;
+        text-align: start;
+    }
+   
 }

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.inicio-space{
+    width: 100%;
+    overflow: hidden;
+    background-image:url(../technology_img/background-technology-mobile.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.contenido-space-centrado{
+    width: 90%;
+    margin: 0 auto;
+}
+.menu-space{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    align-items: center;
+}
+.menu-links-space{
+    display: none;
+}
+.linea_horizontal{
+    display: none;
+    width: 25%;
+    left: 21%;
+    z-index: 100;
+    position: absolute;
+    border-bottom: 2px solid rgba(142, 142, 142, 0.273);
+}
+.contenido_absoluto_section_info_mars{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.title_mars{
+    display: flex;
+    gap: 10px;
+    color: #dfdfdf;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 19px;
+}
+.title_mars span{
+    color: #465468;
+    font-weight: 600;
+}
+.img_technology_banner{
+    width: 100%;
+    height: 200px;
+    margin: 15px auto;
+    background-image: url(../technology_img/image-launch-vehicle-landscape.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.description_texts_botons{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.botons_circles{
+    justify-content: center;
+    display: flex;
+    gap: 15px;
+}
+.circle_number{
+    width: 35px;
+    height: 35px;
+    position: relative;
+    border: 1px solid #dbdbdb;
+    border-radius: 50%;
+}
+.p_circle{
+    color: #dbdbdb;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.circle_number:hover{
+    background-color: #dbdbdb;
+    transition: 1s;
+}
+.circle_number:hover > .p_circle{
+    color: #151e2a;
+}
+.texts_legends_tech{
+    text-transform: uppercase;
+    margin: 25px auto 60px;
+    color: #b3b6bd;
+    text-align: center;
+}
+.title_tch{
+    font-size: 16px;
+    font-weight: 200;
+}
+.subtitle_tch{
+    font-size: 30px;
+    font-weight: 400;
+    color: #eeeeee;
+    padding-bottom: 15px;
+}
+.paragraph_tch{
+    text-transform: lowercase;
+    font-weight: lighter;
+    font-size: 17px;
+}

@@ -60,55 +60,24 @@ body{
     font-weight: 600;
 }
 .contenido-description_posibleImg{
-    margin-top: 55px;
+    margin-top: 20px;
 }
-.textos_crew{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+.contenido_desplazable_tableta{
+    display: none;
 }
-.title_crew{
-    font-size: 28px;
-    color: #b9b9b9;
-    text-transform: uppercase;
-    font-weight: 300;
-}
-.name_person_crew{
-    text-transform: uppercase;
-    font-size: 45px;
-    color: #ececec;
-    font-weight: 400;
-    padding-bottom: 10px;
-}
-.description_person{
-    color: #9ba6b6;
-    font-weight: lighter;
-    font-size: 16px;
-    width: 85%;
-}
-
-.person_contenido_img{
-    margin: 0 auto;
-    margin-top: 50px;
-    width: 80%;    
-}
-
-.img_person{
-    width: 100%;
-}
-
 
 .contenido_desplazable{
-    margin-top: 40px;
+    margin-top: 20px;
     display: flex;
-    gap: 8px;
+    justify-content: center;
+    gap: 11px;
 }
 input[type="radio"] {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    width: 13px;
-    height: 13px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     border: 2px solid #949494;
     background-color: #949494;
@@ -120,6 +89,44 @@ input[type="radio"] {
     border: #fff;
     background-color: rgb(255, 255, 255);
   }
+
+.textos_crew{
+    text-align: center;
+    margin: 20px auto;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.title_crew{
+    font-size: 25px;
+    color: #afafaf;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.name_person_crew{
+    text-transform: uppercase;
+    font-size: 35px;
+    color: #ececec;
+    font-weight: 300;
+}
+.description_person{
+    color: #9ba6b6;
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+.person_contenido_img{
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 70%;    
+}
+.img_person{
+    width: 100%;
+}
+
+
+
   .img_desktop{
     display: none;
   }
@@ -173,8 +180,9 @@ input[type="radio"] {
         font-weight: 400;
         margin-top: 70px;
     }
-
-
+    .textos_crew{
+        margin: 25px auto;
+    }
     .title_crew{
         font-size: 30px;
     }
@@ -185,12 +193,25 @@ input[type="radio"] {
         font-size: 18px;
     }
     .person_contenido_img{
-        margin-top: 40px;
-        width: 60%;    
+       display: none;   
+    }
+    .contenido_desplazable_tableta{
+        display: flex;
+        justify-content: center;
+        gap: 11px;
+        margin: 20px auto;
+    }
+    .contenido_desplazable{
+      display: none;
     }
     .img_desktop{
-        display: none;
-      }
+        margin: 0 auto;
+        display: flex;
+        width: 65%;
+    }
+    .mujer_imgg{
+        width: 100%;
+    }
 }
 
 @media (min-width:800px) {
@@ -210,7 +231,7 @@ input[type="radio"] {
     /*menu*/
     .menu-links-space{
         border-radius: 3px;
-        background-color: rgba(56, 75, 102, 0.417);
+        background-color: rgba(114, 131, 156, 0.417);
         backdrop-filter: blur(10px);
         position: absolute;
         top: 15px;
@@ -242,22 +263,44 @@ input[type="radio"] {
         color: #fff;
         font-weight: bold;
     }
+    
+    .title_mars{
+    font-size: 25px;
+}
+    .textos_crew{
+        margin-top: 55px;
+        text-align: start;
+        gap: 0;
+    }
+    .name_person_crew{
+        font-size: 45px;
+    }
+    .description_person{
+        margin-top: 20px;
+    }
     .person_contenido_img{
         display: none;
     }
     .img_desktop{
         margin-top: 20px;
         display: flex;
-        width: 50%;
+        width: 45%;
       }
 
     .contenido_desktop{
+        margin-top: 45px;
+        gap: 20px;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-    .contenido_desplazable{
-        margin-top: 70px;
+    .contenido_desplazable_tableta{
+        justify-content: flex-start;
+        margin-top: 60px;
+       
+    }
+    .contenido-description_posibleImg{
+        width:50%;
     }
     
 }
