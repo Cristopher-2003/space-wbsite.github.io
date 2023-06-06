@@ -42,7 +42,7 @@ body{
 .contenido_absoluto_section_info_mars{
     width: 90%;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .title_mars{
@@ -57,6 +57,7 @@ body{
 .title_mars span{
     color: #465468;
     font-weight: 600;
+    margin-bottom: 30px;
 }
 .img_technology_banner{
     width: 100%;
@@ -69,7 +70,7 @@ body{
 .description_texts_botons{
     width: 90%;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 .botons_circles{
     justify-content: center;
@@ -117,4 +118,5 @@ body{
     text-transform: lowercase;
     font-weight: lighter;
     font-size: 17px;
+    padding-bottom: 10px;
 }

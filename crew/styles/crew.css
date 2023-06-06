@@ -60,7 +60,7 @@ body{
     font-weight: 600;
 }
 .contenido-description_posibleImg{
-    margin-top: 20px;
+    margin: 20px 0 90px;
 }
 .contenido_desplazable_tableta{
     display: none;
