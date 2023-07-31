@@ -7,6 +7,28 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="stylesheet" href="../crew/styles/crew.css">
   <title>Frontend Mentor | Space tourism website</title>
+
+
+  <!-- En el <head> de tu HTML -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    // Al hacer clic en cualquier enlace dentro de la página
+    $('a').click(function(event) {
+      event.preventDefault();
+      var href = $(this).attr('href');
+
+      // Desvanecer el cuerpo de la página actual
+      $('body').css('opacity', 0);
+
+      // Esperar a que se complete la transición y luego cargar la nueva página
+      setTimeout(function() {
+        window.location.href = href;
+      }, 500); // Esperar 500 milisegundos (0.5 segundos) para que termine la transición
+    });
+  });
+</script>
+
 </head>
 <body>
   <section class="inicio-space">
