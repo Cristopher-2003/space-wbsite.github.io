@@ -71,7 +71,7 @@ body{
 
 .circle_explore{
     margin: 65px auto ;
-   margin-bottom: 170px;
+   padding-bottom: 170px;
     display: flex;
   justify-content: center;
   align-items: center;
