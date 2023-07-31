@@ -83,6 +83,7 @@ body{
     position: relative;
     border: 1px solid #dbdbdb;
     border-radius: 50%;
+    cursor: pointer;
 }
 .p_circle{
     color: #dbdbdb;
@@ -91,13 +92,14 @@ body{
     left: 50%;
     transform: translate(-50% , -50%);
 }
-.circle_number:hover{
-    background-color: #dbdbdb;
-    transition: 1s;
+
+.circle_number.selected{
+    background-color: rgb(255, 255, 255);
+  }
+  .circle_number.selected .p_circle{
+color: #151e2a;
 }
-.circle_number:hover > .p_circle{
-    color: #151e2a;
-}
+
 .texts_legends_tech{
     text-transform: uppercase;
     margin: 25px auto 60px;
@@ -119,4 +121,179 @@ body{
     font-weight: lighter;
     font-size: 17px;
     padding-bottom: 10px;
+}
+.img_cohet{
+    display: none;
+}
+
+@media(min-width:600px){ /*diseño de tableta*/
+    .inicio-space{
+        background-image:url(../technology_img/background-technology-tablet.jpg);
+    }
+    .img_technology_banner{
+        width: 100%;
+        height: 250px;
+        margin: 5px auto;
+        background-image: url(../technology_img/image-launch-vehicle-landscape.jpg);
+        background-size: cover;
+        background-position: 0%;
+    }
+    .hamburguer_menu{
+        display: none;
+    }
+    .menu-links-space{
+        display: flex;
+        background-color: rgba(32, 38, 78, 0.416);
+        backdrop-filter: blur(10px);
+        position: absolute;
+        top: 0;
+        right: 0;
+        gap: 25px;
+        padding:0 30px;
+        height: 80px;
+        align-items: center;
+    }
+    .links{
+        color: #fff;
+        text-decoration: none;
+        letter-spacing: 1px;
+        font-weight: 100;
+        font-size: 14px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .links:hover{
+        color: #d2d2d2;
+    }
+    .links:focus{
+        border-bottom: 3px solid #fff;
+    }
+    .menu-links-space span{
+        display: none;
+    }
+    .texts_legends_tech{
+        margin-top: 50px;
+    }
+    .img_cohet{
+        display: none;
+    }
+
+}
+/*diseño de escritorio*/
+@media (min-width:800px){
+    .inicio-space{
+        background-image:url(../technology_img/background-technology-desktop.jpg);
+    }
+    .menu-links-space{
+        border-radius: 3px;
+        background-color: rgba(114, 131, 156, 0.417);
+        backdrop-filter: blur(10px);
+        position: absolute;
+        top: 15px;
+        gap: 45px;
+        width: 55%;
+        height: 60px;
+        align-items: center;
+        padding-right: 10px;
+        padding-left: 10px;
+        justify-content: center;
+    }
+    .linea_horizontal{
+        display: flex;
+    }
+    .links{
+        display: flex;
+        gap: 5px;
+        color: #fff;
+        text-decoration: none;
+        letter-spacing: 1px;
+        font-weight: 100;
+        font-size: 15px;
+        padding-top: 19px;
+        padding-bottom: 19px;
+    }
+   
+    .menu-links-space span{
+        display: flex;
+        color: #fff;
+        font-weight: bold;
+    }
+    .title_mars{
+        font-size: 25px;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+    .contenido_conjunto_desktop{
+        width: 80%;
+        margin: 20px auto 150px;
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        padding: 30px auto;
+    }
+    .description_texts_botons{
+        display: flex;
+        gap: 30px;
+    }
+    .botons_circles{
+        display: flex;
+        flex-direction: column;
+    }
+    .texts_legends_tech{
+        text-align: start;
+    }
+    .img_technology_banner{
+        display: none;
+    }
+    .title_tch{
+        font-size: 25px;
+        font-weight: 200;
+    }
+    .subtitle_tch{
+        font-size: 45px;
+        font-weight: 300;
+        padding-bottom: 10px;
+    }
+    .paragraph_tch{
+        font-size: 20px;
+    }
+    .texts_legends_tech{
+        width: 45%;
+        margin-left: 0;
+    }
+    .botons_circles{
+        justify-content: center;
+        display: flex;
+        gap: 25px;
+    }
+
+    .circle_number:hover{
+        background-color: #dbdbdba7;
+        border-color: #dbdbdba7;
+        transition: 1s;
+    }
+    .circle_number:hover > .p_circle{
+        color: #151e2a;
+    }
+
+
+
+
+    .circle_number{
+        width: 45px;
+        height: 45px;
+    }
+    .p_circle{
+        font-size: 20px;
+    }
+    .img_cohet{
+        display: flex;
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+        position: absolute;
+        right: 0;
+    }
+
+
 }

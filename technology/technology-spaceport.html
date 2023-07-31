@@ -6,6 +6,8 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="stylesheet" href="../technology/style/technology2.css">
+  <script src="../script.js"></script>
+
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body>
@@ -35,23 +37,35 @@
       <h1 class="title_mars"><span>03</span>Space launch 101</h1>
     </div>
     </div>
+
+    <div class="contenido_conjunto_desktop">
     <div class="img_technology_banner">
       <!-- img -->
     </div>
 
+    <img src="../technology/technology_img/image-spaceport-portrait.jpg" alt="cohete despegando" class="img_cohet">
+    
+
     <div class="description_texts_botons">
       <div class="botons_circles">
-        <div class="circle_number">
-          <p class="p_circle">1</p>
-        </div>
+        <a href="../technology/technology-vehicle.html">  
+          <div class="circle_number" id="uno" onchange="navegar()">
+            <p class="p_circle">1</p>
+          </div>
+        </a> 
 
-        <div class="circle_number">
-          <p class="p_circle">2</p>
-        </div>
 
-        <div class="circle_number">
-          <p class="p_circle">3</p>
-        </div>
+        <a href="../technology/technology-spaceport.html">
+          <div class="circle_number selected" id="dos" onchange="navegar()">
+            <p class="p_circle">2</p>
+          </div>
+          </a>
+
+        <a href="../technology/technology-capsule.html">
+          <div class="circle_number" id="tres" onchange="navegar()">
+            <p class="p_circle">3</p>
+          </div>
+          </a>
       </div>
 
       <div class="texts_legends_tech">
@@ -61,6 +75,7 @@
           by analogy to the seaport for ships or airport for aircraft. Based in the 
           famous Cape Canaveral, our spaceport is ideally situated to take advantage 
           of the Earth’s rotation for launch.</p>
+      </div>
       </div>
     </div>
   </section>
@@ -73,7 +88,3 @@
   
 </body>
 </html>
-
-  
-
-  
